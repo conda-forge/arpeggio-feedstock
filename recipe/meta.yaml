@@ -1,18 +1,18 @@
 {% set name = "Arpeggio" %}
-{% set version = "1.9.2" %}
+{% set version = "1.10.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 948ce06163a48a72c97f4fe79ad3d1c1330b6fec4f22ece182fb60ef60bd022b
+  sha256: 920d12cc762edb2eb56daae64a14c93e43dc181b481c88fc79314c0df6ee639e
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
