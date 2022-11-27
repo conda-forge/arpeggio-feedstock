@@ -31,8 +31,9 @@ test:
   commands:
     - pip check
     - cd perf-tests
-    - ls
-    - pytest -vvv --capture=tee-sys .
+    - python test_speed.py
+    - python test_memory_nomemoization.py
+    - python test_memory_memoization.py
   requires:
     - memory_profiler
     - pip
