@@ -30,10 +30,13 @@ test:
     - arpeggio
   commands:
     - pip check
-    - pytest -vvv --capture=tee-sys perf-tests
+    - cd perf-tests
+    - ls
+    - pytest -vvv --capture=tee-sys .
   requires:
     - memory_profiler
     - pip
+    - psutil
     - pytest
 
 about:
