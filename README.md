@@ -1,11 +1,11 @@
-About arpeggio
-==============
+About arpeggio-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arpeggio-feedstock/blob/main/LICENSE.txt)
 
 Home: http://textx.github.io/Arpeggio
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arpeggio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Parser interpreter based on PEG grammars written in Python
 
