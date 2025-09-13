@@ -1,5 +1,5 @@
 {% set name = "Arpeggio" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/Arpeggio-{{ version }}.tar.gz
-  sha256: c790b2b06e226d2dd468e4fbfb5b7f506cec66416031fde1441cf1de2a0ba700
+  sha256: 9e85ad35cfc6c938676817c7ae9a1000a7c72a34c71db0c687136c460d12b85e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
